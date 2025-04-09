@@ -1,0 +1,250 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* AG Grid custom styles */
+.ag-theme-alpine {
+    --ag-header-height: 50px;
+    --ag-header-background-color: #f8f9fa;
+    --ag-header-foreground-color: #333;
+    --ag-row-hover-color: #f5f5f5;
+    --ag-selected-row-background-color: #e7f4ff;
+    --ag-font-size: 14px;
+    --ag-font-family: Arial, sans-serif;
+    --ag-cell-horizontal-padding: 12px;
+    --ag-row-height: 48px;
+}
+
+.ag-theme-alpine .ag-header-cell {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.ag-theme-alpine .ag-cell {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+
+/* Action buttons styling */
+.action-buttons-container {
+    display: flex;
+    gap: 5px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.action-buttons-container .btn {
+    min-width: 55px;
+    font-weight: 500;
+    border-radius: 3px;
+    padding: 4px 8px;
+    font-size: 13px;
+}
+
+.action-buttons-container .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.action-buttons-container .btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.action-buttons-container .btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #000;
+}
+
+.action-buttons-container .btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+.action-buttons-container .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    min-width: 35px;
+    padding: 4px 6px;
+}
+
+.action-buttons-container .btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+/* Form styling */
+.form-control {
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    padding: 8px 12px;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Modal styling */
+.modal-content {
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    border-bottom: 1px solid #dee2e6;
+    padding: 1rem 1.5rem;
+}
+
+.modal-footer {
+    border-top: 1px solid #dee2e6;
+    padding: 1rem 1.5rem;
+}
+
+/* Animation */
+.love-animation {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    font-size: 2rem;
+    opacity: 1;
+    animation: loveFly 1s ease-in-out forwards;
+}
+
+@keyframes loveFly {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+}
+
+/* Light mode styles */
+body.light-mode {
+    background-color: #f8f9fa;
+    color: #333333;
+}
+
+body.dark-mode {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+.dark-mode .container {
+    background-color: #333333;
+}
+
+.dark-mode .ag-theme-alpine {
+    --ag-background-color: #444444;
+    --ag-header-background-color: #333333;
+    --ag-header-foreground-color: #ffffff;
+    --ag-foreground-color: #ffffff;
+    --ag-row-hover-color: #555555;
+    --ag-selected-row-background-color: #666666;
+    --ag-border-color: #555555;
+}
+
+.dark-mode .form-control {
+    background-color: #444444;
+    color: #ffffff;
+    border-color: #555555;
+}
+
+.dark-mode .form-control::placeholder {
+    color: #aaaaaa;
+}
+
+.dark-mode .modal-content {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.dark-mode .modal-header {
+    border-bottom-color: #555555;
+}
+
+.dark-mode .modal-footer {
+    border-top-color: #555555;
+}
+
+/* Add these styles to your existing CSS file */
+.dark-mode .table {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+.dark-mode .table th,
+.dark-mode .table td {
+  border-color: #495057;
+  color: #f8f9fa;
+}
+
+.dark-mode .card {
+  background-color: #343a40;
+  color: #f8f9fa;
+  border-color: #495057;
+}
+
+.dark-mode .form-control {
+  background-color: #495057;
+  color: #f8f9fa;
+  border-color: #6c757d;
+}
+
+.dark-mode .form-control::placeholder {
+  color: #adb5bd;
+}
+
+/* Add these specific styles for the table in dark mode */
+.dark-mode {
+  background-color: #121212;
+  color: #f8f9fa;
+}
+
+.dark-mode .container {
+  background-color: #121212;
+  color: #f8f9fa;
+}
+
+.dark-mode table {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+.dark-mode th,
+.dark-mode td {
+  background-color: #343a40;
+  color: #f8f9fa;
+  border-color: #495057;
+}
+
+.dark-mode .table {
+  color: #f8f9fa;
+}
+
+.dark-mode .table-striped tbody tr:nth-of-type(odd) {
+  background-color: #2c3034;
+}
+
+/* Make sure buttons remain visible in dark mode */
+.dark-mode .btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.dark-mode .btn-warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.dark-mode .btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
