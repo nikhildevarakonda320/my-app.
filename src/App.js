@@ -19,7 +19,7 @@ const App = () => {
   const [showModal, setShowModal] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
 
-  const API_URL = "http://localhost:5002/api/profiles";
+  const API_URL = "https://expressjs-and-rest-nikhildevarak-production.up.railway.app/api/profiles";
 
   const toggleDarkMode = () => setDarkMode(!darkMode);
 
