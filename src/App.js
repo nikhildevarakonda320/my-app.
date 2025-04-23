@@ -20,7 +20,7 @@ const App = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   // Fix the API URL - remove 'https:' and use 'http:' instead
-  const API_URL = "http://localhost:1000/api/profiles";
+  const API_URL = "http://ec2-3-128-79-233.us-east-2.compute.amazonaws.com:1000/api/profiles";
 
   const toggleDarkMode = () => setDarkMode(!darkMode);
 
